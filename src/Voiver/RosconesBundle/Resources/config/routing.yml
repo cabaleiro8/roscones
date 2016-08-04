@@ -5,3 +5,7 @@ voiver_roscones_homepage:
 voiver_roscones_index:
     path: /roscones/index
     defaults: { _controller:  VoiverRosconesBundle:Roscones:index }
+    
+voiver_roscones_newOrder:
+    path: /roscones/newOrder
+    defaults: { _controller:  VoiverRosconesBundle:Roscones:newOrder }
