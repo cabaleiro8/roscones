@@ -1,0 +1,21 @@
+# Force to use always https routes
+# secure:
+#     path:     /secure
+#     defaults: { _controller: AppBundle:Main:secure }
+#     schemes:  [https]
+    
+voiver_roscones_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: VoiverRosconesBundle:Default:index }
+
+voiver_roscones_index:
+    path: /roscones/index
+    defaults: { _controller:  VoiverRosconesBundle:Roscones:index }
+    
+# ruta con un parámetro
+voiver_roscones_prueba:
+    path: /roscones/prueba/{page} 
+    # valor por defecto para page (1)
+    defaults: { _controller:  VoiverRosconesBundle:Roscones:prueba, page : 1 }
+    requirements: 
+        page: \d+
